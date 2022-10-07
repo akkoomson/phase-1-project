@@ -1,1 +1,92 @@
 /*styles for phase1 html*/
+body{
+    background: linear-gradient(180deg, #FFFFFF 0%, #F0F1FF 100%);
+}
+.container{
+    width: 1110px;
+    height: auto;
+    display: grid;
+    grid-template-rows: auto;
+    border: 1px solid black;
+    margin-left: auto;
+    margin-right: auto;
+}
+.footer-container{
+    height: 120px;
+    width: 100%;
+}
+.footer{
+    width: 1110px;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    margin: auto;
+}
+.header{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+}
+.banner{
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+.image-hero img{
+    position: absolute;
+    width: 991.63px;
+    height: 936.92px;
+    left: 784px;
+    top: -146.13px;
+}
+.starter-section{
+    position: absolute;
+    width: 457px;
+    height: 359px;
+    left: 165px;
+    top: 252px;
+
+}
+/*fonts*/
+@font-face {
+    font-family: Plus Jakarta Sans;
+    src: url(./PlusJakartaSans-Regular.ttf);
+}
+.heading-xl{
+    font-family: Plus Jakarta Sans;
+    font-size: 56px;
+    font-weight: 800;
+    line-height: 71px;
+    letter-spacing: 0px;
+    text-align: left;
+
+}
+.body-m{
+    font-family: Plus Jakarta Sans;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 28px;
+    letter-spacing: 0px;
+    text-align: left;
+}
+.tiles-section{
+    height: 748px;
+    width: 1110px;
+    left: 165px;
+    top: 837px;
+    border-radius: [object Object]px;
+    display: grid;
+    grid-template-rows: auto;
+}
+.tile-row{
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+}
+.tile{
+    height: 322px;
+    width: 350px;
+    left: 165px;
+    top: 861px;
+    border-radius: 0px;
+}
