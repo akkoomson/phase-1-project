@@ -22,21 +22,30 @@ body{
 .banner-section{
     display: grid;
     width: 1110px;
-    height: 757px;
-    grid-template-columns: 50% 50%;
+    height: 837px;
+    grid-template-columns: 500px 500px;
     margin-left: auto;
     margin-right: auto;
 }
+.starter-section{
+    margin-top: 150px;
+}
+.image-hero-mobile{
+    display: none;
+}
+.image-hero img{
+    object-fit: cover;
+    object-position: 0% 100%;
+}
 .image-hero{
-    position: absolute;
-    width: 991.63px;
-    height: 936.92px;
-    left: 784px;
-    top: -146.13px;
+    margin-top: -230px;
+    z-index: -1;
+    width: 661px;
+    height: 793px;
 }
 .tiles-section{
     width: 1110px;
-    height: 888px;
+    height: 768px;
     margin-left: auto;
     margin-right: auto;
     display: grid;
@@ -47,10 +56,25 @@ body{
     grid-template-columns: 33% 33% 33%;
 }
 .tile{
-    height: 322px;
+    height: 342px;
     width: 350px;
     border-radius: 15px;
     background-color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+.tile-text{
+    margin: 1px 32px 5px 32px;
+    height: 190px;
+    width: 286px;
+    display: grid;
+    grid-template-rows: 30px 50px;
+    row-gap: 15px;
+}
+.icon{
+    margin-top: -30px;
+    margin-left: 32px;
 }
 .intro-tile{
     background: linear-gradient(180deg, #FF6F48 0%, #F02AA6 100%);
@@ -58,6 +82,10 @@ body{
 .footer-container{
     width: 100%;
     height: 120px;
+    background: rgba(19, 24, 63, 1);
+    display: flex;
+    align-content: center;
+    margin: 0px;
 }
 .footer{
     width: 1110px;
@@ -65,7 +93,9 @@ body{
     justify-content: space-between;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 30px;
 }
+
 /*fonts*/
 .heading-xl{
     font-size: 56px;
@@ -73,6 +103,7 @@ body{
     line-height: 71px;
     letter-spacing: 0px;
     text-align: left;
+    color: #13183F;
 }
 .body-m{
     font-size: 18px;
@@ -101,6 +132,16 @@ body{
 .intro-tile-text{
     padding: 32px 32px 138px 32px;
 }
+.header-nav .skilled-text{
+    font-size: 38px;
+    font-weight: 900;
+    color: rgba(19, 24, 63, 1);
+}
+.footer-text{
+    color: #FFFFFF;
+    font-size: 38px;
+    font-weight: 900;
+}
 /*buttons and links*/
 .button-2, .button-1, .button-3{
     height: 63px;
@@ -114,20 +155,67 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    text-decoration: none;
 }
 .button-2{
     background: linear-gradient(180deg, #FF6F48 0%, #F02AA6 100%);
 }
+.button-2:hover{
+    background: linear-gradient(180deg, rgba(255, 111, 72, 0.5) 0%, rgba(240, 42, 166, 0.5) 100%);
+}
 .button-1{
     background-color: #13183F;
+}
+.button-1:hover{
+    background-color: #666CA3;
 }
 .button-3{
     background: linear-gradient(180deg, #4851FF -54.32%, #F02AA6 100%);
 }
+.button-3:hover{
+    background: linear-gradient(180deg, rgba(72, 81, 255, 0.5) -54.32%, rgba(240, 42, 166, 0.5) 100%);      
+}
 .link{
     color: #F74780;
-    font-size: 18px;font-weight: 700;
+    font-size: 18px;
+    font-weight: 700;
     line-height: 28px;
     letter-spacing: 0px;
     text-align: left;
+    margin-left: 32px;
+    margin-bottom: 15px;
+}
+.link:hover{
+    color: #FFA7C3;
+}
+
+/*Mobile*/
+@media (min-width:320px) {
+    .banner-section{
+        display: grid;
+        width: 100%;
+        grid-auto-rows: auto;
+        margin-left: auto;
+        margin-right: auto;
+    }   
+    .image-hero{
+        display: none;
+    }
+}
+
+/*Tablet*/
+@media (min-width:641px) {
+    .tile-section{
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+    .tile-row{
+        display: grid;
+        grid-template-rows: 33% 33% 33%;
+    }
+    .tile{
+        height: 259px;
+        width: 339px;
+        border-radius: 10px;
+    }
 }
