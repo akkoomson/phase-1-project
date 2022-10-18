@@ -1,101 +1,4 @@
 /*styles for phase1 html*/
-@font-face {
-    font-family: Plus Jakarta Sans;
-    src: url(./PlusJakartaSans-Regular.ttf);
-}
-body{
-    background-color: #FFFFFF;
-    font-family: Plus Jakarta Sans;
-    overflow-x: hidden;
-}
-.gradient-background{
-    background: linear-gradient(180deg, #FFFFFF 0%, #F0F1FF 100%);
-}
-.header-nav{
-    max-width: 1110px;
-    display: flex;
-    justify-content: space-between;
-    height: 80px;
-    margin-left: auto;
-    margin-right: auto;
-}
-.banner-section{
-    display: grid;
-    width: 1110px;
-    height: 837px;
-    grid-template-columns: 500px 500px;
-    margin-left: auto;
-    margin-right: auto;
-}
-.starter-section{
-    margin-top: 150px;
-}
-.image-hero-mobile{
-    display: none;
-}
-.image-hero img{
-    object-fit: cover;
-    object-position: 0% 100%;
-}
-.image-hero{
-    margin-top: -230px;
-    z-index: -1;
-    width: 661px;
-    height: 793px;
-}
-.tiles-section{
-    width: 1110px;
-    height: 768px;
-    margin-left: auto;
-    margin-right: auto;
-    display: grid;
-    grid-template-rows: 50% 50%;
-}
-.tile-row{
-    display: grid;
-    grid-template-columns: 33% 33% 33%;
-}
-.tile{
-    height: 342px;
-    width: 350px;
-    border-radius: 15px;
-    background-color: #FFFFFF;
-    display: flex;
-    flex-direction: column;
-    box-sizing: border-box;
-}
-.tile-text{
-    margin: 1px 32px 5px 32px;
-    height: 190px;
-    width: 286px;
-    display: grid;
-    grid-template-rows: 30px 50px;
-    row-gap: 15px;
-}
-.icon{
-    margin-top: -30px;
-    margin-left: 32px;
-}
-.intro-tile{
-    background: linear-gradient(180deg, #FF6F48 0%, #F02AA6 100%);
-}
-.footer-container{
-    width: 100%;
-    height: 120px;
-    background: rgba(19, 24, 63, 1);
-    display: flex;
-    align-content: center;
-    margin: 0px;
-}
-.footer{
-    width: 1110px;
-    display: flex;
-    justify-content: space-between;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 30px;
-}
-
 /*fonts*/
 .heading-xl{
     font-size: 56px;
@@ -184,38 +87,272 @@ body{
     text-align: left;
     margin-left: 32px;
     margin-bottom: 15px;
+    width: fit-content;
 }
 .link:hover{
     color: #FFA7C3;
-}
-
+}   
 /*Mobile*/
-@media (min-width:320px) {
+@media (min-width:320px){
+    @font-face {
+        font-family: Plus Jakarta Sans;
+        src: url(./PlusJakartaSans-Regular.ttf);
+    }
+    body{
+        background-color: #FFFFFF;
+        font-family: Plus Jakarta Sans;
+    }
+    .gradient-background{
+        background: linear-gradient(180deg, #FFFFFF 0%, #F0F1FF 100%);
+    }
+    .header-nav{
+        max-width: 97%;
+        display: flex;
+        justify-content: space-between;
+        height: 48px;
+        margin-left: auto;
+        margin-right: auto;
+    }
     .banner-section{
         display: grid;
-        width: 100%;
+        width: 97%;
+        height: 675px;
         grid-auto-rows: auto;
         margin-left: auto;
         margin-right: auto;
-    }   
+    }
+    .starter-section{
+        margin-top: 5px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .tiles-section{
+        width: 97%;
+        margin-left: auto;
+        margin-right: auto;
+        display: grid;
+        grid-auto-rows: auto;
+        margin-top: 66px;
+        row-gap: 40px;
+        padding-bottom: 60px;
+    }
+    .tile-row.first-row{
+        display: grid;
+        grid-template-rows: 130px 260px 260px;
+    }
+    .tile-row{
+        display: grid;
+        grid-template-rows: 260px 260px 260px;
+        row-gap: 40px;
+    }
+    .intro-tile.tile{
+        height: 120px;
+        border-radius: 10px;
+        background: linear-gradient(180deg, #FF6F48 0%, #F02AA6 100%);
+        margin-bottom: 16px;
+    }
+    .tile{
+        height: 259px;
+        width: 97%;
+        border-radius: 10px;
+        background-color: #FFFFFF;
+        display: flex;
+        flex-direction: column;
+        box-sizing: border-box;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 10px;
+        border: 1px solid black;
+    }
     .image-hero{
-        display: none;
+        height: 301px;
+        width: 360px;
+        z-index: -1;
+    }
+    .tile-text{
+        margin: auto 5px;
+        height: 120px;
+        display: grid;
+        grid-template-rows: 25px 78px;
+        row-gap: 15px;
+        margin-left: 28px;
+    }
+    .icon{
+        margin-top: -30px;
+        margin-left: 28px;
+    }
+    .footer-container{
+        height: 120px;
+        width: 100%;
+        background: rgba(19, 24, 63, 1);
+        display: flex;
+        align-content: center;
+        margin: 0px;
+    }
+    .footer{
+        width: 360px;
+        display: flex;
+        justify-content: space-between;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 30px;
+    }
+    /*Mobile fonts and buttons*/
+    .heading-xl{
+        font-size: 40px;
+        font-weight: 800;
+        line-height: 50px;
+        letter-spacing: 0px;
+        text-align: left;
+    }
+    .body-m{
+        font-size: 16px;
+        line-height: 26px;
+        letter-spacing: 0px;
+    }
+    .heading-m{
+        font-size: 24px;
+        font-weight: 800;
+        line-height: 32px;
+        letter-spacing: 0px;
+    }
+    .intro-tile-text{
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+    .button-2{
+        height: 56px;
+    }
+    .button-1, .button-3{
+        height: 48px;
+        width: 140px;
+        border-radius: 28px;
     }
 }
-
-/*Tablet*/
-@media (min-width:641px) {
-    .tile-section{
-        display: grid;
+/*tablet*/
+@media (min-width:801px){
+    body{
+        overflow-x: hidden;
+    }
+    .banner-section{
+        grid-template-columns: 50% 50%;
+        margin-top: 70px;
+        height: 525px;
+    }
+    .image-hero{
+        margin-top: -240px;
+        z-index: -1;
+    }
+    .tiles-section{
         grid-template-columns: 50% 50%;
     }
     .tile-row{
         display: grid;
-        grid-template-rows: 33% 33% 33%;
+        grid-template-rows: 260px 260px 260px;
+    }
+    .intro-tile.tile{
+        height: 259px;
+    }
+    .tile-row.first-row{
+        display: grid;
+        grid-template-rows: 260px 260px 260px;
+    }
+}
+/*Desktop*/
+@media (min-width:1281px){
+    @font-face {
+        font-family: Plus Jakarta Sans;
+        src: url(./PlusJakartaSans-Regular.ttf);
+    }
+    body{
+        background-color: #FFFFFF;
+        font-family: Plus Jakarta Sans;
+        overflow-x: hidden;
+    }
+    .gradient-background{
+        background: linear-gradient(180deg, #FFFFFF 0%, #F0F1FF 100%);
+    }
+    .header-nav{
+        max-width: 1110px;
+        display: flex;
+        justify-content: space-between;
+        height: 56px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .banner-section{
+        display: grid;
+        width: 1110px;
+        grid-template-columns: 50% 50%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .image-hero picture source, .image-hero picture img{
+        object-fit: cover;
+        object-position: 0% 100%;
+    }
+    .starter-section{
+        margin-top: 50px;
+    }
+    .image-hero{
+        margin-top: -300px;
+        z-index: -1;
+        width: 661px;
+        height: 793px;
+    }
+    .tiles-section{
+        width: 1110px;
+        height: 738px;
+        margin-left: auto;
+        margin-right: auto;
+        display: grid;
+        grid-template-rows: 350px 350px;
+        margin-top: auto;
+        padding-bottom: 80px;
+    }
+    .tile-row{
+        display: grid;
+        grid-template-columns: 350px 350px 350px;
+        column-gap: 20px;
+    }
+    .tile-row.first-row{
+        grid-template-columns: 350px 350px 350px;
     }
     .tile{
-        height: 259px;
-        width: 339px;
-        border-radius: 10px;
+        height: 322px;
+        width: 350px;
+        border-radius: 15px;
     }
+    .tile-text{
+        margin: 1px 32px 5px 32px;
+        height: 190px;
+        width: 286px;
+        display: grid;
+        grid-template-rows: 30px 50px;
+        row-gap: 15px;
+    }
+    .icon{
+        margin-top: -30px;
+        margin-left: 32px;
+    }
+    .intro-tile.tile{
+        height: 322px;
+    }
+    .footer-container{
+        width: 100%;
+        height: 120px;
+        background: rgba(19, 24, 63, 1);
+        display: flex;
+        align-content: center;
+        margin: 0px;
+    }
+    .footer{
+        width: 1110px;
+        display: flex;
+        justify-content: space-between;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 30px;
+    }
+    
 }
