@@ -95,7 +95,7 @@
     color: #FFA7C3;
 }   
 /*Mobile*/
-@media screen and (min-width:400px){
+@media screen and (min-width:320px){
     @font-face {
         font-family: Plus Jakarta Sans;
         src: url(./PlusJakartaSans-Regular.ttf);
@@ -232,7 +232,7 @@
     }
 }
 /*tablet*/
-@media screen and (min-width:800px){
+@media screen and (min-width:900px){
     .banner-section{
         grid-template-columns: 50% 50%;
         margin-top: 70px;
