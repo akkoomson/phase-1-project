@@ -95,7 +95,7 @@
     color: #FFA7C3;
 }   
 /*Mobile*/
-@media screen and (min-width:320px){
+@media screen and (max-width:600px){
     @font-face {
         font-family: Plus Jakarta Sans;
         src: url(./PlusJakartaSans-Regular.ttf);
