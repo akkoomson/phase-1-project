@@ -127,23 +127,14 @@
         margin-right: auto;
     }
     .tiles-section{
-        width: 97%;
+        width: 95%;
         margin-left: auto;
         margin-right: auto;
         display: grid;
-        grid-auto-rows: auto;
+        grid-template-columns: repeat(auto-fit, minmax(343px, 0.8fr));
         margin-top: 66px;
         row-gap: 40px;
         padding-bottom: 60px;
-    }
-    .tile-row.first-row{
-        display: grid;
-        grid-template-rows: 130px 260px 260px;
-    }
-    .tile-row{
-        display: grid;
-        grid-template-rows: 260px 260px 260px;
-        row-gap: 40px;
     }
     .intro-tile.tile{
         height: 120px;
@@ -162,7 +153,6 @@
         margin-left: auto;
         margin-right: auto;
         border-radius: 10px;
-        border: 1px solid black;
     }
     .image-hero{
         height: 301px;
@@ -230,7 +220,7 @@
     }
 }
 /*tablet*/
-@media (min-width:801px){
+@media (min-width:706px){
     body{
         overflow-x: hidden;
     }
@@ -246,10 +236,7 @@
     .tiles-section{
         grid-template-columns: 50% 50%;
     }
-    .tile-row{
-        display: grid;
-        grid-template-rows: 260px 260px 260px;
-    }
+    
     .intro-tile.tile{
         height: 259px;
     }
@@ -267,7 +254,7 @@
     body{
         background-color: #FFFFFF;
         font-family: Plus Jakarta Sans;
-        overflow-x: hidden;
+        
     }
     .gradient-background{
         background: linear-gradient(180deg, #FFFFFF 0%, #F0F1FF 100%);
@@ -303,20 +290,12 @@
     .tiles-section{
         width: 1110px;
         height: 738px;
+        grid-template-columns: repeat(3, 343px);
+        column-gap: 30px;
         margin-left: auto;
         margin-right: auto;
-        display: grid;
-        grid-template-rows: 350px 350px;
-        margin-top: auto;
+        margin-top: 120px;
         padding-bottom: 80px;
-    }
-    .tile-row{
-        display: grid;
-        grid-template-columns: 350px 350px 350px;
-        column-gap: 20px;
-    }
-    .tile-row.first-row{
-        grid-template-columns: 350px 350px 350px;
     }
     .tile{
         height: 322px;
