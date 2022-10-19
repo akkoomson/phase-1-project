@@ -92,7 +92,7 @@
     color: #FFA7C3;
 }   
 /*Mobile*/
-@media (min-width:320px){
+@media screen and (min-width:320px){
     @font-face {
         font-family: Plus Jakarta Sans;
         src: url(./PlusJakartaSans-Regular.ttf);
@@ -131,7 +131,7 @@
     .tiles-section{
         max-width: 100%;
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(343px, 0.8fr));
+        grid-template-columns: repeat(auto-fit, minmax(339px, 350px));
         justify-content: center;
         margin: 66px 0px 0px 0px;
         row-gap: 40px;
@@ -224,7 +224,7 @@
     }
 }
 /*tablet*/
-@media (min-width:750px){
+@media screen and (min-width:700px){
     body{
         overflow-x: hidden;
     }
@@ -250,7 +250,7 @@
     }
 }
 /*Desktop*/
-@media (min-width:1280px){
+@media screen and (min-width:1280px){
     @font-face {
         font-family: Plus Jakarta Sans;
         src: url(./PlusJakartaSans-Regular.ttf);
