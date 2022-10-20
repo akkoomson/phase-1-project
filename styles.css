@@ -99,39 +99,45 @@
         src: url(./PlusJakartaSans-Regular.ttf);
     }
     body{
-        background-color: #FFFFFF;
         font-family: Plus Jakarta Sans;
+        background-color: #FFFFFF;
+        margin: 0px;
     }
     .gradient-background{
         background: linear-gradient(180deg, #FFFFFF 0%, #F0F1FF 100%);
     }
     .header-nav{
-        max-width: 97%;
+        max-width: 90%;
         display: flex;
         justify-content: space-between;
         height: 48px;
-        margin-left: auto;
-        margin-right: auto;
+        margin: 8px 16px 3px 16px;
     }
     .banner-section{
         display: grid;
-        width: 97%;
+        max-width: 90%;
         height: 675px;
         grid-auto-rows: auto;
         margin-left: auto;
         margin-right: auto;
+        margin-top: 0%;
     }
-    .starter-section{
-        margin-top: 5px;
-        margin-left: auto;
-        margin-right: auto;
+    .image-hero{
+        z-index: -1;
+        margin: auto 16px;
+    }
+    
+    figure img{
+        width: 150%;
+        margin: -20px auto auto -20%;
     }
     .tiles-section{
-        width: 95%;
+        width: 100%;
         margin-left: auto;
         margin-right: auto;
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(343px, 0.8fr));
+        justify-content: center;
+        grid-template-columns: repeat(auto-fit, minmax(229px, 350px));
         margin-top: 66px;
         row-gap: 40px;
         padding-bottom: 60px;
@@ -154,13 +160,9 @@
         margin-right: auto;
         border-radius: 10px;
     }
-    .image-hero{
-        height: 301px;
-        width: 360px;
-        z-index: -1;
-    }
     .tile-text{
-        margin: auto 5px;
+        margin: 0px auto auto auto;
+        padding: 5px auto;
         height: 120px;
         display: grid;
         grid-template-rows: 25px 78px;
@@ -180,12 +182,11 @@
         margin: 0px;
     }
     .footer{
-        width: 360px;
+        width: 90%;
         display: flex;
         justify-content: space-between;
-        margin-left: auto;
-        margin-right: auto;
         margin-top: 30px;
+        margin: 30px auto auto auto;
     }
     /*Mobile fonts and buttons*/
     .heading-xl{
@@ -218,9 +219,13 @@
         width: 140px;
         border-radius: 28px;
     }
+    .footer-text{
+        height: 35px;
+        width: 89px;
+    }
 }
 /*tablet*/
-@media (min-width:706px){
+@media (min-width:700px){
     body{
         overflow-x: hidden;
     }
