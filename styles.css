@@ -103,9 +103,6 @@
         background-color: #FFFFFF;
         margin: 0px;
     }
-    .gradient-background{
-        background: linear-gradient(180deg, #FFFFFF 0%, #F0F1FF 100%);
-    }
     .header-nav{
         max-width: 90%;
         display: flex;
@@ -128,8 +125,13 @@
     }
     
     figure img{
-        width: 150%;
+        max-width: 150%;
         margin: -20px auto auto -20%;
+    }
+    .gradient-background{
+        background: linear-gradient(180deg, #FFFFFF 0%, #F0F1FF 100%);
+        width: 100%;
+        padding-top: 3.89%;
     }
     .tiles-section{
         width: 100%;
@@ -138,7 +140,7 @@
         display: grid;
         justify-content: center;
         grid-template-columns: repeat(auto-fit, minmax(229px, 350px));
-        margin-top: 66px;
+        margin-top: 3.89%;
         row-gap: 40px;
         padding-bottom: 60px;
     }
@@ -164,11 +166,13 @@
         margin: 0px auto auto auto;
         padding: 5px auto;
         height: 120px;
-        display: grid;
-        grid-template-rows: 25px 78px;
-        row-gap: 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        row-gap: 6.17%;
         margin-left: 28px;
     }
+    
     .icon{
         margin-top: -30px;
         margin-left: 28px;
@@ -226,28 +230,45 @@
 }
 /*tablet*/
 @media (min-width:700px){
-    body{
-        overflow-x: hidden;
+    .header-nav{
+        margin: 2.61% auto;
     }
     .banner-section{
         grid-template-columns: 50% 50%;
-        margin-top: 70px;
-        height: 525px;
+        height: 62.32%;
+    }
+    .starter-section{
+        text-align: left;
+        width: 113.71%;
+        margin-top: 5%;
     }
     .image-hero{
-        margin-top: -240px;
-        z-index: -1;
+        width: 100%;
+        margin: -55% 0% 0% 0%;
+    }
+    figure img{
+        height: 640px;
+        width: 640.71435546875px;
+        object-fit: cover;
+        object-position: 0% 100%;
+    }
+    .gradient-background{
+        padding-top: 0%;
     }
     .tiles-section{
         grid-template-columns: 50% 50%;
+        width: 90%;
     }
-    
     .intro-tile.tile{
         height: 259px;
     }
     .tile-row.first-row{
         display: grid;
         grid-template-rows: 260px 260px 260px;
+    }
+    .tile-text{
+        display: grid;
+        grid-template-rows: 30% 70%;
     }
 }
 /*Desktop*/
