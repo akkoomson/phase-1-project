@@ -1,17 +1,13 @@
 /*styles for phase1 html*/
 /*fonts*/
 .heading-xl{
-    font-size: 56px;
     font-weight: 800;
-    line-height: 71px;
     letter-spacing: 0px;
     text-align: left;
     color: #13183F;
 }
 .body-m{
-    font-size: 18px;
     font-weight: 500;
-    line-height: 28px;
     letter-spacing: 0px;
     text-align: left;
     color: #83869A;
@@ -25,15 +21,13 @@
     color: #13183F;
 }
 .heading-m{
-    color: #FFFFFF;
-    font-size: 32px;
     font-weight: 800;
-    line-height: 40px;
     letter-spacing: 0px;
     text-align: left;
 }
 .intro-tile-text{
     padding: 32px 32px 138px 32px;
+    color: #FFFFFF;
 }
 .header-nav .skilled-text{
     font-size: 38px;
@@ -108,7 +102,7 @@
         display: flex;
         justify-content: space-between;
         height: 48px;
-        margin: 8px 16px 3px 16px;
+        margin: 8px auto 3px auto;
     }
     .banner-section{
         display: grid;
@@ -123,7 +117,6 @@
         z-index: -1;
         margin: auto 16px;
     }
-    
     figure img{
         max-width: 150%;
         margin: -20px auto auto -20%;
@@ -163,14 +156,13 @@
         border-radius: 10px;
     }
     .tile-text{
-        margin: 0px auto auto auto;
+        margin: 0px auto auto 28px;
         padding: 5px auto;
         height: 120px;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         row-gap: 6.17%;
-        margin-left: 28px;
     }
     
     .icon{
@@ -272,7 +264,7 @@
     }
 }
 /*Desktop*/
-@media (min-width:1281px){
+@media (min-width:1000px){
     @font-face {
         font-family: Plus Jakarta Sans;
         src: url(./PlusJakartaSans-Regular.ttf);
@@ -280,68 +272,64 @@
     body{
         background-color: #FFFFFF;
         font-family: Plus Jakarta Sans;
-        
     }
     .gradient-background{
         background: linear-gradient(180deg, #FFFFFF 0%, #F0F1FF 100%);
     }
     .header-nav{
-        max-width: 1110px;
-        display: flex;
-        justify-content: space-between;
+        max-width: 77.08%;
         height: 56px;
         margin-left: auto;
         margin-right: auto;
     }
     .banner-section{
-        display: grid;
-        width: 1110px;
-        grid-template-columns: 50% 50%;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    .image-hero picture source, .image-hero picture img{
-        object-fit: cover;
-        object-position: 0% 100%;
+        height: 45.37%;
+        max-width: 77.08%;
     }
     .starter-section{
+        width: 91.4%;
         margin-top: 50px;
     }
-    .image-hero{
-        margin-top: -300px;
-        z-index: -1;
-        width: 661px;
-        height: 793px;
+    figure img{
+        display: none;
+        position: absolute;
+        left: 54.4%;
+        top: -7.92%;
     }
     .tiles-section{
-        width: 1110px;
-        height: 738px;
-        grid-template-columns: repeat(3, 343px);
-        column-gap: 30px;
+        max-width: 77.08%;
+        justify-content: space-between;
+        padding: auto 0px;
+        grid-template-columns: repeat(3, 32%);
+        gap: auto;
         margin-left: auto;
         margin-right: auto;
-        margin-top: 120px;
         padding-bottom: 80px;
     }
     .tile{
-        height: 322px;
-        width: 350px;
+        max-height: 322px;
+        max-width: 350px;
         border-radius: 15px;
+        border: 1px solid black;
     }
     .tile-text{
-        margin: 1px 32px 5px 32px;
-        height: 190px;
-        width: 286px;
+        height: 60%;
+        max-width: 90%;
         display: grid;
-        grid-template-rows: 30px 50px;
-        row-gap: 15px;
+        grid-template-rows: 30% 70%;
+        row-gap: 5px;
+        column-gap: 5%;
+        margin-top: -8px;
+    }
+    .link{
+        margin-top: 10%;
     }
     .icon{
         margin-top: -30px;
         margin-left: 32px;
     }
     .intro-tile.tile{
-        height: 322px;
+        max-height: 322px;
     }
     .footer-container{
         width: 100%;
@@ -352,12 +340,24 @@
         margin: 0px;
     }
     .footer{
-        width: 1110px;
+        width: 77.08%;
         display: flex;
         justify-content: space-between;
         margin-left: auto;
         margin-right: auto;
         margin-top: 30px;
     }
-    
+    /* larger fonts */
+    .heading-xl{
+        font-size: 56px;
+        line-height: 71px;
+    }
+    .body-m{
+        font-size: 16px;
+        line-height: 28px;
+    }
+    .heading-m{
+        font-size: 32px;
+        line-height: 40px;
+    }
 }
