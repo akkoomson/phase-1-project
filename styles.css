@@ -285,16 +285,21 @@
     .banner-section{
         height: 45.37%;
         max-width: 77.08%;
+        
     }
     .starter-section{
         width: 91.4%;
-        margin-top: 50px;
+        margin-top: 20px;
+    }
+    .image-hero{
+        margin-top: -46%;
     }
     figure img{
-        display: none;
-        position: absolute;
-        left: 54.4%;
-        top: -7.92%;
+        object-fit: cover;
+        object-position: 0% 100%;
+        /* position: absolute;
+        left: 69%;
+        top: -0.92%; */
     }
     .tiles-section{
         max-width: 77.08%;
@@ -310,7 +315,6 @@
         max-height: 322px;
         max-width: 350px;
         border-radius: 15px;
-        border: 1px solid black;
     }
     .tile-text{
         height: 60%;
